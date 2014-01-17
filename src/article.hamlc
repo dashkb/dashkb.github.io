@@ -1,0 +1,9 @@
+- _ = @helpers._
+
+%article
+  %header
+    .title= @page.title
+    - if @page.subtitle
+      .subtitle= @page.subtitle
+    .date= @helpers.date (_.first @page.revisions).date
+  != @page.html
