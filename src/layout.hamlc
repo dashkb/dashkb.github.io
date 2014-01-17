@@ -1,15 +1,12 @@
 !!! 5
 %html
   %head
-    %title
-      <%= title %>
+    %title= @page.title
     %script{type: "text/javascript", src: "/js/all.js"}
     %link{rel: "stylesheet", type: "text/css", href: "/css/all.css"}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
   %body
     #page
-      #nav
-        <%= nav %>
-      #content
-        <%= content %>
+      #nav!= @nav(@)
+      #content!= @content
 
