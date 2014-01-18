@@ -6,4 +6,5 @@
     - if @page.subtitle
       .subtitle= @page.subtitle
     .date= @helpers.date (_.first @page.revisions).date
+    %hr
   != @page.html

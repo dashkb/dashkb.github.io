@@ -1,5 +1,6 @@
+- @page.template ?= 'article'
+
 !!! 5
-- thing = "hello"
 %html
   %head
     %title= @page.title
@@ -9,5 +10,5 @@
   %body
     #page
       #nav!= @JST['nav'](@)
-      #content!= @JST['article'](@)
+      #content!= if @page.template then @JST[@page.template](@) else @page.html
 

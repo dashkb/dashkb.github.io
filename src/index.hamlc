@@ -1,0 +1,14 @@
+:coffeescript
+  _ = @helpers._
+  pages = _(@site.pages).values().filter (page) ->
+    page.template == 'article' && !page.noIndex
+  .sortBy (page) ->
+    _.first(page.revisions).date
+  .reverse().value()
+
+%h2 Writings
+.page-links
+  - _.each pages, (page) =>
+    .page-link
+      %a{href: page.path}= page.title
+      %span.date= @helpers.date _.first(page.revisions).date

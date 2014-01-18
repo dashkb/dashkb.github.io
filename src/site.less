@@ -10,9 +10,14 @@ html, body, #page, #content {
   font-size: 15px;
 }
 
+body {
+  background-image: url('/images/bgtile.png')
+}
+
 #page {
   .container();
-  margin-top: 20px;
+  padding-top: 15px;
+  background: #fff;
 }
 
 #content, #nav {
@@ -62,6 +67,11 @@ article {
   }
 
   header {
+    margin-bottom: 10px;
+    hr {
+      margin-top: 2px;
+    }
+
     .title {
       .h2;
     }
@@ -69,12 +79,19 @@ article {
     .subtitle {
       .h4;
       .small;
+      margin-top: 2px;
     }
 
     .date {
       margin-top: 2px;
       .small;
     }
+  }
+}
+
+#content {
+  h1, h2, h3 {
+    margin-top: 10px;
   }
 }
 
@@ -93,7 +110,21 @@ article {
 }
 
 @media (min-width: @screen-md-min) {
+  #content {
+    .make-md-column(7);
+  }
+
   #nav {
     .make-md-column(3);
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  #content {
+    .make-lg-column(8);
+  }
+
+  #nav {
+    .make-lg-column(2);
   }
 }

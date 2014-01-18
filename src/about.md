@@ -1,5 +1,6 @@
 ---
 title: About
+noIndex: true
 ---
 
 ## What Am I?
