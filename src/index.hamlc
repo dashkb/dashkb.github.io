@@ -12,3 +12,6 @@
     .page-link
       %a{href: page.path}= page.title
       %span.date= @helpers.date _.first(page.revisions).date
+
+- if pages.length == 0
+  .lead Just setting this all up, sit tight, sorry.
