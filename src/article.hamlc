@@ -2,7 +2,7 @@
 
 %article
   %header
-    .title= @page.title
+    .title= @page.title || @page.slug
     - if @page.subtitle
       .subtitle= @page.subtitle
     .date= @helpers.date (_.first @page.revisions).date

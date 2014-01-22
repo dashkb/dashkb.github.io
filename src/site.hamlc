@@ -1,5 +1,3 @@
-- @page.template ?= 'article'
-
 !!! 5
 %html
   %head
