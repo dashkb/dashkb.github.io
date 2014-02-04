@@ -1,6 +1,6 @@
 ---
 title: About
-index: false
+template: false
 ---
 
 ## What Am I?

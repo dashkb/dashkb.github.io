@@ -133,7 +133,7 @@ it.  Also, writing.
 * **Revisions.** I hate all my old recordings and I'm sure the same will be
   true with writings; for transparency's sake when I update a post I want links
   to the page's history.  (This is all [backed by Git](https://github.com/dashkb/dashkb.github.io), of course.)
-* **A Footer.** To protect my masterpieces with explicit copyright.
+* ~~**A Footer.**~~ To protect my masterpieces with explicit copyright.
 * **The Build Script** needs some work:
     * Be like `make` and only build things that have changed
     * Be smarter about options, defaults, and passing them from command to subcommand

@@ -16,5 +16,6 @@
   %body
     #page
       #nav!= @JST['nav'](@)
-      #content!= if @page.template then @JST[@page.template](@) else @page.html
-
+      #content
+        != if @page.template then @JST[@page.template](@) else @page.html
+      #footer!= @JST['footer'](@)

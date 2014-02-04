@@ -19,7 +19,7 @@ body {
   background: #fff;
 }
 
-#content, #nav {
+#content, #nav, #footer {
   .make-sm-column(12);
 }
 
@@ -39,10 +39,12 @@ body {
 
   i {
     margin-right: 5px;
+    min-width: 16px;
+    text-align: center;
   }
 }
 
-article {
+#content {
   padding-top: 10px;
   padding-bottom: 40px;
 
@@ -95,6 +97,11 @@ article {
   }
 }
 
+#footer {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
 @media (min-width: @screen-sm-min) {
   #nav {
     display: block;
@@ -106,6 +113,10 @@ article {
 
   #content {
     .make-sm-column(8);
+  }
+
+  #footer {
+    padding-top: 20px;
   }
 }
 
