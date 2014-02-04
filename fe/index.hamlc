@@ -1,6 +1,9 @@
-%h2 Writings
-.page-links
-  - @helpers._.each @helpers.articles, (page) =>
-    .page-link
-      %a{href: page.path}= page.title || page.slug
-      %span.date= @helpers.date @helpers._.first(page.revisions).date
+%article
+  %header
+    .title Writings
+
+  .page-links
+    - @helpers._.each @helpers.articles, (page) =>
+      .page-link
+        %a{href: page.path}= page.title || page.slug
+        %span.date= @helpers.date @helpers._.first(page.revisions).date
