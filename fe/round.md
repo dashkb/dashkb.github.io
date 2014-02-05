@@ -14,36 +14,43 @@ build tension before I drop the fail, here's what went right:
 
 Imagine yourself in a glowing forest, stumbling happily about from campfire to
 campfire, enjoying the various pretties.  Everywhere you go, someone has chosen
-the music for you, and it's usually something like (maybe don't click this
-link) [this](http://www.youtube.com/watch?v=pFd7MHcYW1o&t=13m32s) and maybe you
-like a little variety or hearing what your friends are saying.  If you found
-yourself [at our camp](/images/camp-entrance.jpg) you'd further find yourself
-encouraged to search our (ridiculously large) collection at the
+the music for you, and you've heard every permutation of `['filthy', 'nasty',
+'bass', 'drop']`, but not what anyone around you is saying.  Imagine next you've
+arrived [at our camp](/images/camp-entrance.jpg) and you find yourself
+encouraged to search our (ridiculously large) music collection at the
 [kiosk](/images/kiosk.jpg) and enqueue music you'd like to hear (perhaps while
 challenging your friend to some [boxketball](/images/boxketball.jpg)).
 
 I know that a proper musical experience sometimes requires more than one track
-to played in order, and so Round lets you queue a few tracks at a time.  This,
-in my mind, is crucial (otherwise how could I listen to Phish with it?),
-and useless without...
+played in order, and so Round lets you queue a few tracks at a time.  This,
+in my mind, is crucial (otherwise how could I listen to Phish with it? also
+Abbey Road), and useless without...
 
-#### Gapless Playback
+#### Gapless Playback <small>A Basic Human Right</small>
 
 It's ~~surprising~~ embarassing how few music players have this essential
-feature.  When looking for players (perhaps for your new Nexus 5 last fall) you
-can't even trust a player advertising its playback as gapless.  Apparently,
-20ms of static between tracks counts as gapless these days.  Either that, or
-most people can't tell and/or don't care.  It *almost* makes me miss my iPhone.
-It's worth noting (with outrage) that I was in the minority prioritizing this
-above various album-art-related features.
+feature.  Apparently, 20ms of static between tracks counts as gapless these
+days.  Either that, or most people can't tell and/or don't care.  It *almost*
+makes me miss my iPhone.  The stock Android player fails (it has a box you
+can check that doesn't do anything), as do [VLC](http://videolan.org), and
+Apollo, the player bundled with [CM11](http://cyanogenmod.com), among others
+I've uninstalled and forgotten.
 
-I took advantage of the fact that I was in complete control (well, mostly)
-of the production environment and used [CoreAudio](https://github.com/nagachika/ruby-coreaudio)
-for playback.  This means that (currently) you've got to host the thing on
-a Mac.  Gapless playback is easy if you aren't farming playback out
-to a music player or library you borrowed; all that is required is a loop
-that buffers samples (from a source like some mp3 files) and writes them
-to the output device.  Check it (paraphrased from the [actual file](https://github.com/dashkb/round/blob/master/lib/player.rb#L83)):
+Faced with building a player of my own gapless was a top priority for me;
+shamefully most of my group was more interested in album art.  To me,
+prioritizing a visual feature before an audio feature is like prioritizing the
+way your food looks and tastes ahead of its nutritional value. (<small>*sigh*</small>)
+[This](/images/cover-flow.jpg) is why I don't care about cover flow.  Nobody
+cared about gapless but me.  I still did it.
+
+I took advantage of the fact that I was in complete control (well, mostly) of
+the production environment and used
+[CoreAudio](https://github.com/nagachika/ruby-coreaudio) for playback.  This
+means that (currently) you've got to host the thing on a Mac.  Gapless is easy
+if you take full responsibility for playback: all that is required is a loop
+that buffers samples (from a source like some mp3 files) and writes them to the
+output device.  Check it (paraphrased from the [actual
+file](https://github.com/dashkb/round/blob/master/lib/player.rb#L83)):
 
 ```ruby
 size   = 4096
@@ -105,10 +112,10 @@ how deeply buried is it?)
 
 We settled on a sort of iTunes clone, and, for performance reasons (did I say
 our collection was really big?) we had to cut some features at the last minute.
-(By which I mean I was writing code in the rain in the forest.)  Fortunately
+(By which I mean I was writing code in the rain in the forest.  Way fun.)  Fortunately
 it wasn't too much work to move features around the frontend due to a modular
 design and having way too many APIs lying around.  Unfortunately a lot of
-cruft is sitting around now.  For next year, a full redesign is required of course.
+cruft is milling about.  For next year, a full redesign is required of course.
 
 #### Track Importing
 
