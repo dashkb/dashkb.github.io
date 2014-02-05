@@ -129,9 +129,11 @@ it.  Also, writing.
 
 * **Comments.**  Perhaps one day I'll post something discussion-worthy, and when
   that day comes I'll be ready.
-* **Revisions.** I hate all my old recordings and I'm sure the same will be
+* ~~**Revisions.**~~ I hate all my old recordings and I'm sure the same will be
   true with writings; for transparency's sake when I update a post I want links
   to the page's history.  (This is all [backed by Git](https://github.com/dashkb/dashkb.github.io), of course.)
+  And now that I've done it, up in the header you can see a (GitHub) link 
+  to the last commit that contains a change to this post.
 * ~~**A Footer.**~~ To protect my masterpieces with explicit copyright.
 * **The Build Script** needs some work:
     * Be like `make` and only build things that have changed
