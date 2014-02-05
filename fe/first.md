@@ -96,13 +96,12 @@ units) I had to do this a bunch of times:
 ```coffeescript
 gulp.src(someGlob)
   ...
-  .pipe(mapStream (file, cb) ->
+  .pipe mapStream (file, cb) ->
     text = file.contents.toString 'utf8'
     # Do some stuff, modify `text`
     file.contents = new Buffer text
     # or rename the file, whatever
     cb null, file
-  )
   ...
 ```
 
