@@ -122,7 +122,7 @@ control, and of course Browserify, Less, [Marked](https://github.com/chjj/marked
 and many other excellent libraries.  I like to think I prefer this because the
 tools I chose all solve a specific problem and don't force anything on me.
 
-I'm happy with [what I've got](https://github.com/dashkb/dashkb.github.io), and I'm looking forward to continuing to improve
+I'm happy with [what I've got](https://github.com/dashkb/fetool), and I'm looking forward to continuing to improve
 it.  Also, writing.
 
 #### #TODO
