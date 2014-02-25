@@ -1,9 +1,16 @@
+:coffeescript
+  pages = _(@site.pages).values().filter (page) ->
+    page.template == 'article' && page.index
+  .sortBy (page) ->
+    _.last(page.revisions).date
+  .reverse().value()
+
 %article
   %header
     .title Writings
 
   .page-links
-    - @helpers._.each @helpers.articles, (page) =>
+    - _.each pages, (page) =>
       .page-link
         %a{href: page.path}= page.title || page.slug
-        %span.date= @helpers.date @helpers._.last(page.revisions).date
+        %span.date= @helpers.date _.last(page.revisions).date
