@@ -1,8 +1,9 @@
 :coffeescript
+  moment = require 'moment'
   pages = _(@site.pages).values().filter (page) ->
     page.template == 'article' && page.index
   .sortBy (page) ->
-    _.last(page.revisions).date
+    if d = page.releaseDate then moment(d) else _.last(page.revisions).date
   .reverse().value()
 
 %article
@@ -13,4 +14,4 @@
     - _.each pages, (page) =>
       .page-link
         %a{href: page.path}= page.title || page.slug
-        %span.date= @helpers.date _.last(page.revisions).date
+        %span.date= @helpers.date page.releaseDate || _.last(page.revisions).date
