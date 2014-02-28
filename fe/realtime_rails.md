@@ -1,13 +1,13 @@
 ---
 title: Realtime Rails with Redis and Node
 template: article
-draft: true
 ---
 
 So you want to add some realtime features to your Rails app.  Chat, perhaps, or
-maybe you're making a fun game.  Either way, you heard somewhere that you should
-use [Node.js](http://nodejs.org/) to do it.  I'm not saying you heard right, but
-I will show you how and leave the philosophy out for now.
+maybe you're making a fun game.  Whatever you're building, you heard somewhere
+that you should use [Node.js](http://nodejs.org/) to do it.  I'm not saying you
+heard right, but I will show you how and leave the philosophizing to the
+philosophizers.
 
 #### Install a Brain
 
@@ -48,10 +48,10 @@ part](https://github.com/dashkb/thing/blob/camera/app/controllers/application_co
 but you can borrow mine if you want to.  It's up to you to set yourself up some
 Redis.  [Here](https://github.com/dashkb/thing/blob/master/Procfile)'s
 [how](https://github.com/dashkb/thing/blob/master/config/initializers/redis.rb)
-I do it.  Also, it's time to take notice that we now have *two data sources*, one
+I do it.  Also, note we now have *two data sources*, one
 of which we plan to *share with at least one other service*.  This means our
 Rails-centric universe is no more; the Rails service's role is now something like
-"model API server."
+"model API server" instead of "everything".
 
 If you know me you've heard me make this argument before:
 just because we have a shiny new thing doesn't mean we should
@@ -64,7 +64,7 @@ of the cool parts from here on out will be in rails.
 #### Training Reflexes
 ##### or: comitting to a bad analogy
 
-We've got Rails publishing events to Redis.  It's time to set up something
+With Rails publishing events to Redis, it's time to set up something
 on the other end.  Let's create a CoffeeScript file (perhaps in a `realtime/`
 directory at the top level of our Rails project) to handle realtime connections
 from clients.
@@ -109,7 +109,7 @@ console.log "Realtime service listening on port #{process.env.PORT}"
 
 So, you'll need to `npm install --save redis primus ws` (in your `realtime/`
 directory) to get the Redis module installed, and
-[Primus](https://github.com/primus/primus), which is a library that wraps a
+[Primus](https://github.com/primus/primus)-- a library that wraps a
 whole bunch of WebSocket-ish libraries so you can write your code without
 caring if you're using WebSockets or BrowserChannel or Socket.IO or whatever.
 Read the Primus docs; there's a little [manual
@@ -144,16 +144,16 @@ will get you started.
 Running our app now requires starting three services (not counting our SQL
 database) which is too much to manage manually.  I linked it above, but now
 it's mandatory: check out how I set up my
-[Procfile](https://github.com/dashkb/thing/blob/camera/Procfile) and and define
+[Procfile](https://github.com/dashkb/thing/blob/camera/Procfile) and define
 the appropriate evironment variables in `.env`.  If that made no sense, go read
 about [Foreman](https://github.com/ddollar/foreman).
 
 #### Build Self-Confidence
 
 Once you've got your sockets connecting, we'll need a way to find out
-who we're talking to.  This took me a while to figure out.  We'll accomplish
-this by decoding the Rails cookie containing the user's session.  Back to our
-realtime node service:
+who we're talking to.  This took me a while to figure out.
+The Rails cookie, which contains the user's session, must be decrypted.
+Back to our realtime node service:
 
 ```ruby
 _ = require 'lodash'
