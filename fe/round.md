@@ -2,6 +2,7 @@
 title: "Round: Writing Code in the (Literal) Wild"
 slug: round
 template: article
+tags: [code, music]
 ---
 
 [Round](http://github.com/dashkb/round) is a democratic music player I put

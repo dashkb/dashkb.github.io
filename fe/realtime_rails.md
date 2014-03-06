@@ -1,6 +1,7 @@
 ---
 title: Realtime Rails with Redis and Node
 template: article
+tags: [code, rails, node]
 ---
 
 So you want to add some realtime features to your Rails app.  Chat, perhaps, or

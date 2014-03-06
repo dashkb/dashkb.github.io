@@ -2,6 +2,7 @@
 title: I Made a Thing that Makes Websites
 subtitle: "Or: I have a website"
 template: article
+tags: [code, site]
 ---
 
 These days, it's not enough to just be talented.  Skills alone can't pay the
