@@ -1,5 +1,6 @@
 @import 'bootstrap/less/bootstrap';
 @import 'font-awesome/less/font-awesome';
+@import './styles/index';
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,500);
 
@@ -11,6 +12,10 @@ html, body, #page, #content {
 
 body {
   background-image: url('/images/bgtile.png')
+}
+
+a {
+  cursor: pointer;
 }
 
 #page {
@@ -121,7 +126,7 @@ body {
 
 @media (min-width: @screen-md-min) {
   #content {
-    .make-md-column(7);
+    .make-md-column(8);
   }
 
   #nav {

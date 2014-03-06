@@ -8,10 +8,23 @@
 
 %article
   %header
-    .title Writings
+    %span.title Writings
+    %span.tag-filter.hide
+      showing tag
+      %span.tag
+      %a.unfilter unfilter
 
   .page-links
     - _.each pages, (page) =>
       .page-link
-        %a{href: page.path}= page.title || page.slug
-        %span.date= @helpers.date page.releaseDate || _.last(page.revisions).date
+        %a.title{href: page.path}= page.title || page.slug
+        .date= @helpers.date page.releaseDate || _.last(page.revisions).date
+        - if page.tags?.length > 0
+          .tags
+            in
+            - _.each page.tags, (tag, i) ->
+              %a.tag{data-tag: tag}
+                - if page.tags.length > 1 && i < page.tags.length - 1
+                  = "#{tag}, "
+                - else
+                  = "#{tag}."

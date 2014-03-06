@@ -1,0 +1,22 @@
+.tag-filter {
+  .small;
+}
+
+.page-link {
+  .tags, .tags > a, .date {
+    padding-left: 0;
+    display: inline;
+  }
+
+  .tags {
+    .small;
+  }
+
+  @media (max-width: @screen-md-min) {
+    .date, .tags {
+      .small;
+      margin-left: 10px;
+      display: block;
+    }
+  }
+}
