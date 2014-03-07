@@ -134,7 +134,7 @@ On the frontend, we need to connect.  Something like
 socket = Primus.connect 'http://localhost:5300'
 socket.on 'open',  => console.log "Connected"
 socket.on 'close', => console.log "Disconnected"
-socket.on 'error', (err) => log.debug "Socket error: #{err}"
+socket.on 'error', (err) => console.log "Socket error: #{err}"
 socket.on 'data', (data) => console.log "Got data", data
 ```
 
