@@ -2,9 +2,10 @@ $ = require 'jquery'
 _ = require 'lodash'
 
 $ ->
-  $filter = $ '.tag-filter'
-  $tag    = $filter.find '.tag'
-  $links  = $ '.page-link'
+  $filter       = $ '.tag-filter'
+  $tag          = $filter.find '.tag'
+  $links        = $ '.page-link'
+  $articleLinks = $ 'article a'
 
   showFilter = (tag) ->
     $tag.html tag
@@ -28,3 +29,5 @@ $ ->
 
   ($filter.find '.unfilter').click ->
     filter()
+
+  $articleLinks.attr 'target', '_blank' unless location.pathname == '/'
