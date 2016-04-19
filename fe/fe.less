@@ -18,6 +18,10 @@ a {
   cursor: pointer;
 }
 
+strong {
+  font-weight: 500;
+}
+
 #page {
   .container();
   padding-top: 15px;
@@ -51,6 +55,7 @@ a {
 
 article {
   font-size: 18px;
+  line-height: 1.4;
 }
 
 #content {
@@ -102,6 +107,10 @@ article {
       margin-top: 2px;
       font-size: 12px;
     }
+  }
+
+  li:not(:last-of-type) {
+    margin-bottom: 5px;
   }
 }
 
