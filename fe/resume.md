@@ -10,6 +10,25 @@ template: plain
 
 ### Professional Experience
 ----------------
+#### Hired: *Sr. Engineer / Sr. Systems Engineer*
+
+* SF, CA
+* 5/2014 - 11/2015
+
+I joined Hired as the fourth member of the engineering team. I was ultimately responsible
+for shipping features, maintaining the quality and performance of our systems and engineering
+processes, and building a mature, effective engineering culture.  I did this by:
+
+* Writing performant, maintainable code with desirable effects on business metrics
+* Driving institution of collaborative code review for all contributions as soon as I joined the team
+* Building and maintaining tools to allow operating and monitoring our systems from chat (ChatOps)
+* Interviewing hundreds of engineering candidates (the team quadrupled during my tenure) and iterating on the interview process
+* Leading technical strategy discussions and reviewing implementations
+* Facilitating weekly "lightning talks" to share engineering knowledge and build community
+* Working with the CTO/VP to establish a career track for engineering (e.g. objective criteria for promotion)
+* Helping the CTO/VP prioritize work and allocate engineering effort
+* Becoming the primary point of escalation for technical roadblocks
+
 #### General Assembly: *Developer in Residence (Contract)*
 
 * SF, CA
