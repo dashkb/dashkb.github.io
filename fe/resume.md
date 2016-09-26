@@ -10,6 +10,15 @@ template: plain
 
 ### Professional Experience
 ----------------
+#### Cerplus: *CTO / Cofounder*
+
+* SF, CA
+* 1/2016 - Present
+
+I build, maintain, and operate the Cerplus marketplace platform.  I support customers by assisting
+with technical issues and gathering feedback to improve the business and product.  With my cofounder,
+I develop and iterate on the business model and tactics.
+
 #### Hired: *Sr. Engineer / Sr. Systems Engineer*
 
 * SF, CA
