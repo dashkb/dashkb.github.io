@@ -3,14 +3,17 @@ title: Resumé
 template: plain
 ---
 
-<span class="lead">*Expert in Ruby, Rails, and Javascript.  My favorite databases are Postgres and Redis.  I test my Ruby with RSpec, and my Javascript with Mocha.  I use ~~Delayed Job~~ ~~Resque~~ Sidekiq for background job processing.  I always `git init` before I write code.*
-</span>
-<br/>
-<br/>
-
 ### Professional Experience
 ----------------
-#### Cerplus: *CTO / Cofounder*
+#### [Hired](https://hired.com): *Devops Contractor*
+
+* SF/Remote
+* 9/2016 - Present
+
+I rejoined Hired on a contract basis to continue my work supporting the team with operational tooling,
+specifically ChatOps and deployment improvements.
+
+#### [Cerplus](https://www.getcerplus.com/) [(YC F2)](https://blog.ycombinator.com/yc-fellowship/): *CTO / Cofounder*
 
 * SF, CA
 * 1/2016 - Present
@@ -38,7 +41,7 @@ processes, and building a mature, effective engineering culture.  I did this by:
 * Helping the CTO/VP prioritize work and allocate engineering effort
 * Becoming the primary point of escalation for technical roadblocks
 
-#### General Assembly: *Developer in Residence (Contract)*
+#### [General Assembly](https://generalassemb.ly): *Developer in Residence (Contract)*
 
 * SF, CA
 * 9/2013 - 12/2013
@@ -51,7 +54,7 @@ Below are some samples of class materials I wrote:
 * [Intro Methods (Ruby) and Recursion](https://gist.github.com/dashkb/1df1276af392fd354046)
 * [Lab: Backbone.js Models and Events](https://gist.github.com/dashkb/87574e73178cc645ccf4)
 
-#### TapJoy: *Sr. Engineer*
+#### [TapJoy](https://tapjoy.com): *Sr. Engineer*
 * SF, CA
 * 8/2012 - 6/2013
 
@@ -59,14 +62,14 @@ As a backend engineer at [TapJoy](https://www.tapjoy.com/) I was involved in var
 
 As a senior engineer, I contributed to discussions with our remote infrastructure team in Boston about architecture and our monorail-to-service-oriented strategy.  I worked closely with them to keep our teams in sync.  I also made myself available to junior engineers for advice and assistance.  I was fortunate at TapJoy to work with people who were serious about maintaining quality tests, *always* having thorough code reviews, and willing to consistently iterate on our development process.
 
-#### TaskRabbit: *Engineer*
+#### [TaskRabbit](https://taskrabbit.com): *Engineer*
 * SF, CA
 * 5/2012 - 8/2012
 * Security and Performance Team
 
 In my short time at TaskRabbit, I was able increase app server performance by 30% by optimizing SQL queries and locating memory leaks.  I also spent time modernizing and upgrading the Rails 2 codebase, removing cruft and updating or replacing old dependencies.
 
-#### Vitrue, Inc (now Oracle SRM): *Engineer*
+#### [Vitrue](https://vitrue.com), Inc (now Oracle SRM): *Engineer*
 * Atlanta, GA
 * 11/2010 - 5/2012
 
