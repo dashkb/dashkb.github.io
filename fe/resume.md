@@ -86,7 +86,7 @@ On the Implementations team, I did contract work for our clients; these were typ
 I took over this site from Highgroove (which is now Big Nerd Ranch).  Unfortunately, http://musicgearfinder.com is down now, but it essentially was an index of local music shops and their inventories by location.  When I started work on the project, the site was buggy and feature-incomplete.  My greatest contribution was adding the product search feature, which was supported by a background CSV import.  I also AJAXified most of the UI and fixed/improved a laundry list of client issues.  Deployments and hosting concerns were also my responsibility.  MGF was a great first experience working with clients and managing a solo production project.
 
 #### Trivia
-* I am a [Vim + Tmux zealot](http://screens.dashkb.net/1._tmux-20140120-164035.jpg)
+* I am a [Vim + Tmux zealot](http://screens.dashkb.net/20170210081812.png)
 * My other main passion is music
   * I play guitar
   * I `assert(awesomeness(:tubes) > awesomeness(:transistors))`
