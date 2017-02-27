@@ -6,13 +6,9 @@ template: false
 
 ## Projects of Potential Interest
 
-#### [Camera Thing](https://github.com/dashkb/thing/tree/camera)
+#### [dburl](https://github.com/dashkb/dburl)
 
-This needs a better name, clearly.  Currently just a prototype, when
-finished this will be a realtime handsfree communication tool for [jamming](http://en.wikipedia.org/wiki/Jam_session).
-It's a Rails API with the realtime component in Node.JS, with Redis pub-sub
-thrown in for good measure.  In case your jam band has thousands of people and
-is distributed throughout the world.  There will be a post.
+Ruby gem to connect to databases with a URL.
 
 #### [Round](https://github.com/dashkb/round)
 
@@ -22,7 +18,7 @@ on a hidden laptop connected to the sound system.  Festivalgoers used the kiosk
 to browse our collection and queue their favorite songs for their enjoyment
 while visiting.
 
-This probably only runs on Macs, which is a bummer.  (It uses CoreAudio).
+This probably only runs on Macs (it uses CoreAudio), which is a bummer.
 It will import your iTunes library or just any plain ol' directory full of music.
 My favorite thing about it: *real* gapless playback.
 
