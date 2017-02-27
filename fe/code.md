@@ -16,7 +16,7 @@ A Rails music player with mobile frontend.  Deployed at an art festival
 in the woods, with the frontend on a standing iPad kiosk and the backend running
 on a hidden laptop connected to the sound system.  Festivalgoers used the kiosk
 to browse our collection and queue their favorite songs for their enjoyment
-while visiting.
+while visiting. You can read about its successes and downfall in [my post](/round.html).
 
 This probably only runs on Macs (it uses CoreAudio), which is a bummer.
 It will import your iTunes library or just any plain ol' directory full of music.
